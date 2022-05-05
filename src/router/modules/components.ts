@@ -49,6 +49,12 @@ const componentsRouter = {
             name: 'upload',
             meta: { title: '上传图片', noCache: true  }
         },
+        {
+            path: 'color-picker',
+            component: () => import('@/views/components-demo/color-picker.vue'),
+            name: 'color-picker',
+            meta: { title: '取色器', noCache: true  }
+        },
     ]
 }
 

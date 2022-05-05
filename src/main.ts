@@ -18,8 +18,9 @@ Object.keys(ElIconsModules).forEach((key) => {//循环遍历组件名称
         app.component(key + "Icon", ElIconsModules[key]);
     }
 });
-
-import '@/styles/index.scss' // global css
+import "@/styles/element/index.scss";
+import "@/styles/index.scss";
+// import '@/styles/index.scss' // global css
 app.use(store).use(router).use(ElementPlus,{
     locale: zhCn,
 }).mount('#app')
